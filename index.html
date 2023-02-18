@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
+    <meta name="viewport" content="width=300, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="description" content="Block Puzzle Javascript Application" />
+    <meta name="keywords" content="block puzzle" />
+    <link rel="icon" href="libs/img/js.png" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Muli&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Budget Track-er</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>Budget Tracker</h1>
+      </div>
+
+      <div class="dashboard">
+        <!-- 1st db -->
+        <div class="hDashBoard">
+          <div class="TDashBoard">
+            <h5>Enter a budget</h5>
+            <div class="budgetOptions">
+              <label for="">Select an option</label>
+              <select name="" id="option">
+                <option value="income">Budget</option>
+                <option value="expense">Expense</option>
+              </select>
+            </div>
+            <div class="budgetDesc">
+              <label for="" class="descLabel">Please enter a description</label>
+              <input type="text" id="desc" placeholder="eg. salary" />
+              <label for="" class="amountLabel">Please enter an amount</label>
+              <input type="text" id="amount" placeholder="eg. 10" />
+              <button class="submit">Submit</button>
+            </div>
+          </div>
+          <div class="TBetween"></div>
+        </div>
+
+        <!-- 2nd db -->
+        <div class="jDashBoard">
+          <div class="jTopDashBoard">
+            <div class="iDashBoard iIncome">
+              <h5>Income</h5>
+              <p class="incTotal">$ 0.00</p>
+              <span class="incSum">No Income Yet</span>
+            </div>
+            <div class="jBetween"></div>
+            <div class="iDashBoard iExpense">
+              <h5>Expenses</h5>
+              <p class="expTotal">$ 0.00</p>
+              <span class="expSum">No Expense Yet</span>
+            </div>
+            <div class="jBetween"></div>
+            <div class="iDashBoard iBalance">
+              <h5>Balance</h5>
+              <p class="balSum">$ 0.00</p>
+              <span class="balPercent">No Savings Yet</span>
+            </div>
+          </div>
+          <div class="jBottomDashBoard">
+            <div class="bar">
+              <!-- scroll bar -->
+            </div>
+          </div>
+        </div>
+        <!-- 2nd db xx -->
+      </div>
+      <!-- db xx -->
+
+      <div class="summary">
+        <div class="income">
+          <h5>Income Summary</h5>
+          <ul class="incomeSummary">
+            <!-- ilist-->
+          </ul>
+        </div>
+        <div class="inBetween"></div>
+        <div class="expense">
+          <h5>Expense Summary</h5>
+          <ul class="expenseSummary">
+            <!-- elist-->
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="js/vars.js"></script>
+  <script src="js/script.js"></script>
+</html>
